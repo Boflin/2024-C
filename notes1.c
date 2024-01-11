@@ -53,14 +53,29 @@ Declaring in C, java, C++:
         \'      print single apostraphe
         \""     print double apostraphe
 
-        ----------- PLACEHOLDERS ---------------
+        ----------- printf PLACEHOLDERS ---------------
         %c      characters / letters    char
         %d      whole number            int, short
         %ld     whole numbers(large)    long
         %f      real numbers(decimal)   float, double
+        
         %u                              unsigned short
         %lu                             unsigned long
         %s      "strings"(arrays)       character array
+
+        ----------- scanf PLACEHOLDERS ---------------
+        %lf     real numbers(decimal)   float, double       scanf("%lf", &d);  // read a double value from the standard input and store
+
+        %c      characters / letters    char
+        %d      whole number            int, short
+        %ld     whole numbers(large)    long
+        
+        %u                              unsigned short
+        %lu                             unsigned long
+        %s      "strings"(arrays)       character array
+
+
+
 
         puts("some text"); // put string no variables
 
