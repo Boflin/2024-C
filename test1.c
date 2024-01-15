@@ -13,7 +13,7 @@ int main() {
     long b = 2126322;
     float c = 6.02e+2; //float c = 602.00;
     double d = 3.3e-18;
-    char e = 'z';
+    char e = 'C';
 
     // This is Supposed to print out b\a (b divided by a) is {formatted answer}
     printf("b\a is %ld\n", b/a);  // Output:  'b is 141754'  Not what we expect
@@ -33,8 +33,12 @@ int main() {
     printf("b\\a is (Type casting to float) =  %f\n", (float)b/a); // Output: 'b\a is 141754.796875'
     printf("b\\a is (Type casting to Int) =  %f\n", (int)b/a); // Output: 'b\a is 0.000000'
 
-    // %f is floating point,  %.2f maps 20 decimal places
+    // %f is floating point,  %.20f maps 20 decimal places (%.2f maps 2 decimal places, and so on)
     printf("c is %f, d is %.20f\n", c, d);
+
+    // %c for character
+    printf(" %c says \"Hello\". \n", e); // Output: 'C says "Hello".'
+    
 
     // final return statement
     return 0;
