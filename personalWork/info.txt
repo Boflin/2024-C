@@ -1,0 +1,2 @@
+A folder to mess around and try different projects in. 
+May try to convert some Python programs into C. 

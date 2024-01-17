@@ -32,12 +32,13 @@ int main() {
     // get hourly rate and hours worked from user
     puts("Please Enter your hourly rate:");
     scanf("%f", &hourlyRate);
+    
+    // Flush the buffer
+    int ch;
+    while ( ( ch = getchar() ) != '\n' && ch != EOF );
 
     puts("Please enter the hours you've worked:");
     scanf("%f", &hoursWorked);
-
-    // Flush the buffer
-    int ch;
     while ( ( ch = getchar() ) != '\n' && ch != EOF );
 
     // Calculate the gross pay 

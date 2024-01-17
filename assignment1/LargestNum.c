@@ -26,14 +26,16 @@ int main() {
     puts("Enter the first number:");
     scanf("%d", &num1);
 
+    // Flush the buffer
+    int ch;
+    while ( ( ch = getchar() ) != '\n' && ch != EOF );
+
     puts("Enter the Second number:");
     scanf("%d", &num2);
+    while ( ( ch = getchar() ) != '\n' && ch != EOF );
 
     puts("Enter the third number");
     scanf("%d", &num3);
-
-    // Flush the buffer
-    int ch;
     while ( ( ch = getchar() ) != '\n' && ch != EOF );
 
     // call the function and display the result
@@ -43,3 +45,7 @@ int main() {
     // final return statement 
     return 0;
 }
+/*
+    Test's Ran:
+    
+*/

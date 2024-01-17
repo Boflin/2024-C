@@ -40,12 +40,14 @@ int main() {
     puts("Enter the first number:");
     scanf("%f", &num1);
 
-    puts("Enter the second number:");
-    scanf("%f", &num2);
-
     // clear the buffer 
     int ch;
     while ( ( ch = getchar() ) != '\n' && ch != EOF );
+
+    puts("Enter the second number:");
+    scanf("%f", &num2);
+    while ( ( ch = getchar() ) != '\n' && ch != EOF ); // Clear the Buffer
+
 
     // Perform math operations and display results
     printf("%.2f plus %.2f is %.2f\n", num1, num2, addThem(num1, num2));
@@ -55,4 +57,10 @@ int main() {
 
     // final return statement
     return 0;
+
+
+    /*
+        Tests Ran: 
+        
+    */
 }

@@ -2,15 +2,16 @@
     Author: Cory Mischiek
     Date: 2024-01-13
     Description: An application for a streaming service, the user will 
-        chose from the list of plans w/ prices, chose an optional add-on and 
-        then output the Name of the service, price, and add on if they chose it.
+        chose from the list of plans w/ prices, if they make a valid choice 
+        they will be offered an optional add-on and will be shown a purchase 
+        summary at the end of the program. 
 */
 
 #include <stdio.h>
 
 int main() {
     // Declare our variables
-    // const float price_AD_SUPPORTED = 9.99;
+    const float price_AD_SUPPORTED = 9.99;
     const float price_BASIC = 16.99;
     const float price_STANDARD = 24.99;
     const float price_ADDON = 7.99;
