@@ -32,7 +32,7 @@ int main() {
     // get hourly rate and hours worked from user
     puts("Please Enter your hourly rate:");
     scanf("%f", &hourlyRate);
-    
+
     // Flush the buffer
     int ch;
     while ( ( ch = getchar() ) != '\n' && ch != EOF );
@@ -58,3 +58,12 @@ int main() {
 
     return 0;
 }
+
+/*
+    TODO: 
+    Run test cases 
+
+    Verify Results
+
+    Make sure I cant break it
+*/

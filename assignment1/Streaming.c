@@ -16,11 +16,9 @@ int main() {
     const float price_STANDARD = 24.99;
     const float price_ADDON = 7.99;
     
+    char addOnChosen = ' ';
     float invalid_price = 0;
     float user_pays = 0;
-
-    // 0 = false, 1 = true
-    int bool_addOn = 0;
 
     // Output the Plans and prices to the user, formatting the price to 2 decimal places.
     puts("Welcome to the application. Please select one of the following plans by typing 1, 2 or 3:");
@@ -50,8 +48,7 @@ int main() {
         // if addOnChoice was Y/y - add the price to user's total.
         if (addOnChoice == 'Y' || addOnChoice == 'y') {
             user_pays += price_ADDON;
-            // set our int to 1, indicating true
-            bool_addOn = 1;
+            addOnChosen = 'Y';
             puts("You've added an optional feature!");
         }
         // if add on choice was anything but (y)es, the add on price will not factor into users total price
@@ -79,7 +76,7 @@ int main() {
         printf("Invalid choice! - Total Cost $%d\n", invalid_price);
     }
 
-    if (bool_addOn == 1) {
+    if (addOnChosen == 'Y') {
         printf("Additional add-on price: $%.2f\n", price_ADDON);
         printf("Total Cost of purchase: $%.2f\n", user_pays);
     }

@@ -40,13 +40,13 @@ int main() {
     puts("Enter the first number:");
     scanf("%f", &num1);
 
-    // clear the buffer 
+    // flush the buffer 
     int ch;
     while ( ( ch = getchar() ) != '\n' && ch != EOF );
 
     puts("Enter the second number:");
     scanf("%f", &num2);
-    while ( ( ch = getchar() ) != '\n' && ch != EOF ); // Clear the Buffer
+    while ( ( ch = getchar() ) != '\n' && ch != EOF ); // flush the Buffer
 
 
     // Perform math operations and display results
