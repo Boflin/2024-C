@@ -48,5 +48,8 @@ int main() {
 
 /*
     Test's Ran:
-    
+     - all the same number = 10,10,10 is 10  [pass]
+     - negative numbers    = -9,-40,-100 is -9 [pass]
+     - 2 numbers the same  = 1000, 1000, 2450 is 2450 [pass]
+     - 1 negative number   =  -9, 10, 20 is 20  [pass]
 */
